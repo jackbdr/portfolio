@@ -3,18 +3,27 @@
     .navbar-wrap {
         max-width: none;
         .logo {
-            max-width: 4%;
+            max-width: 57px;
         }
         .bulk-navbar {
             align-self: baseline;
-            width: fit-content;
+            width: 100%;
             display: flex;
             justify-content: center;
+            // margin-top: 1%;
             p {
                 cursor: pointer;
-                margin: 2%;
+                margin-left: 3%;
+                margin-right: 3%;
                 display: inline-block;
                 position: relative;
+                font-size: 1.1rem;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            p:hover {
+                font-style: italic;
+                opacity: 1;
             }
             p:hover:after {
                 content: "";
@@ -26,23 +35,36 @@
                 left: 50%;
                 transform: translate(-50%);
             }
+            .fadeout {
+                -webkit-transition: all 0.1s ease;
+                -moz-transition: all 0.1s ease;
+                -o-transition: all 0.1s ease;
+                transition: all 0.1s ease;
+            }
+        }  
+        .mail-btn {
+            cursor: pointer;
+            width: 50px;
+            display: inline-block;
+            position: relative;
+            border-radius: 20px;
         }
-        // .contact-div {
-            .mail-btn {
-                cursor: pointer;
-                // transition: transform .2s;
-                max-width: 3%;
-            }
-            .mail-btn:hover:after {
-                content: "";
-                height: 2px;
-                width: 50%;
-                background-color: #800020;
-                position: absolute;
-                bottom: -.3em;
-                left: 50%;
-                transform: translate(-50%);
-            }
-        // }
+        .mail-btn:hover {
+            opacity: 0.8;
+        }
     }
+    .corner-div {
+        display: inline-block;
+    }
+}
+hr {
+    margin: 0 auto !important;
+    width: 88% !important;
+    color: #800020 !important;
+    opacity: 1 !important;
+    border-top: 2px solid !important;
+}
+
+.bulk-navbar:hover .fadeout {
+    opacity: 0.5;
 }
