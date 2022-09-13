@@ -16,21 +16,26 @@ const NavBar = () => {
     <>
       <Navbar expand='sm' className='navbar'>
         <Container className='navbar-wrap'>
-          {/* <Navbar.Brand> */}
-          <img src={Logo} className='logo' />
-          {/* </Navbar.Brand> */}
-          <div className='bulk-navbar'>
+          <Navbar.Brand>
+            <img src={Logo} className='logo' />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className='mr-auto ml-auto' />
+          <Navbar.Collapse id='basic-navbar-nav' className='bulk-navbar mr-auto ml-auto'></Navbar.Collapse>
+          <Nav>
+            {/* <div className='bulk-navbar'> */}
             <p className='about-btn fadeout'>about</p>
             <p className='projects-btn fadeout'>projects</p>
             <p className='exp-btn fadeout'>experience</p>
             <p className='interests-btn fadeout'>interests</p>
-          </div>
-          {/* <div className='media-div'> */}
-          <img className='mail-btn' src={Mail} alt='email' />
-          {/* </div> */}
-        </Container>
-      </Navbar>
-      <hr />
+            {/* </div> */}
+            {/* <div className='media-div'> */}
+            <img className='mail-btn' src={Mail} alt='email' />
+            {/* </div> */}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+      {/* <hr /> */ }
     </>
   )
 
