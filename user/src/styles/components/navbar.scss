@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    .navbar-wrap {
+        max-width: none;
+        .logo {
+            max-width: 4%;
+        }
+        .bulk-navbar {
+            align-self: baseline;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            p {
+                cursor: pointer;
+                margin: 2%;
+                display: inline-block;
+                position: relative;
+            }
+            p:hover:after {
+                content: "";
+                height: 2px;
+                width: 50%;
+                background-color: #800020;
+                position: absolute;
+                bottom: -.3em;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        // .contact-div {
+            .mail-btn {
+                cursor: pointer;
+                // transition: transform .2s;
+                max-width: 3%;
+            }
+            .mail-btn:hover:after {
+                content: "";
+                height: 2px;
+                width: 50%;
+                background-color: #800020;
+                position: absolute;
+                bottom: -.3em;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        // }
+    }
+}

@@ -1,3 +1,10 @@
+@import './components/navbar.scss';
+
 * {
   box-sizing: border-box;
+}
+
+.site-wrapper {
+  // background-color: beige;
+  height: 200vh;
 }
