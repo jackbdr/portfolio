@@ -1,4 +1,6 @@
 @import './components/navbar.scss';
+@import './components/home.scss';
+@import './components/helpful.scss';
 
 * {
   box-sizing: border-box;
@@ -12,4 +14,7 @@ body {
 .site-wrapper {
   // background-color: beige;
   height: 200vh;
+  background-color: #f6f3e7;
 }
+
+$bergundy: #800020;

@@ -1,0 +1,43 @@
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moving {
+    from {top: 25px;}
+    to {top: 0px;}
+}
+
+@-webkit-keyframes moving {
+    from {top: 25px;}
+    to {top: 0px;}
+}
+
+.home {
+    height: 100vh;
+    .greeting {
+        flex-direction: column;
+        height: 70%;
+        .Typewriter {
+            font-family: 'Lilita One', cursive;
+            font-size: 400%;
+            letter-spacing: 2px;
+            color: #800020;
+        }
+        .se-wrapper {
+            opacity: 1;
+            // animation: appear 0.1s ease-out 2.35s forwards;
+            position: relative;
+            -webkit-animation: moving 0.5s ease-out 3s forwards;
+            animation: moving 0.5s ease-out 3s forwards;
+            h2 {
+                font-family: 'Bebas Neue', cursive;
+                margin-top: 2px;
+                opacity: 0;
+                letter-spacing: 1.5px;
+                animation: appear 0.1s ease-out 3s forwards;
+            }
+        }
+    }
+}
