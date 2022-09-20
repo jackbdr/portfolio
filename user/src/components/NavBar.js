@@ -21,9 +21,9 @@ const NavBar = () => {
           <div className='bulk-navbar'>
             <p className='about-btn fadeout'><Link to='about' spy={true} smooth={true} duration={300}>about</Link></p>
             <p className='projects-btn fadeout'><Link to="projects" spy={true} smooth={true} duration={300}>projects</Link></p>
-            <p className='exp-btn fadeout'>experience</p>
-            <p className='interests-btn fadeout'>interests</p>
-            <p className='contact-btn fadeout'>contact</p>
+            <p className='exp-btn fadeout'><Link to="experience" spy={true} smooth={true} duration={300}>experience</Link></p>
+            <p className='interests-btn fadeout'><Link to="interests" spy={true} smooth={true} duration={300}>interests</Link></p>
+            <p className='contact-btn fadeout'><Link to="contact" spy={true} smooth={true} duration={300}>contact</Link></p>
           </div>
           <div className='socials-div'>
             <a className='linkedin' href='https://www.linkedin.com/in/jackbdr/' target='_blank' rel="noreferrer">
