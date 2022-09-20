@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
@@ -8,7 +8,6 @@ import Nav from 'react-bootstrap/Nav'
 import Logo from '../images/f6f3e71.gif'
 import In from '../images/linkedin.png'
 import Github from '../images/github.png'
-import Mail from '../images/mail.png'
 
 const NavBar = () => {
 
@@ -20,7 +19,7 @@ const NavBar = () => {
             <img src={Logo} className='logo' />
           </Navbar.Brand>
           <div className='bulk-navbar'>
-            <p className='about-btn fadeout'>about</p>
+            <p className='about-btn fadeout'><Link activeClass="active" to='about' spy={true} smooth={true}>about</Link></p>
             <p className='projects-btn fadeout'>projects</p>
             <p className='exp-btn fadeout'>experience</p>
             <p className='interests-btn fadeout'>interests</p>
