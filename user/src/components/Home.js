@@ -18,7 +18,10 @@ const Home = () => {
           <h2>Software Engineer</h2>
         </div>
       </div>
-      {/* <img scr={Scroll} alt='scroll-down-icon' /> */}
+      <div className='scroll-wrapper'>
+        <img className='scroll-btn' src={Scroll} alt='scroll-down-icon' />
+        {/* <p className='scroll-btn' src={Scroll} alt='scroll-down-icon'>Hello</p> */}
+      </div>
     </div>
   )
 }

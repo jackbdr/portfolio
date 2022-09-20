@@ -24,10 +24,16 @@ const NavBar = () => {
             <p className='projects-btn fadeout'>projects</p>
             <p className='exp-btn fadeout'>experience</p>
             <p className='interests-btn fadeout'>interests</p>
+            <p className='contact-btn fadeout'>contact</p>
           </div>
-          {/* <div className='media-div'> */}
-          <img className='mail-btn' src={Mail} alt='email' />
-          {/* </div> */}
+          <div className='socials-div'>
+            <a className='linkedin' href='https://www.linkedin.com/in/jackbdr/' target='_blank' rel="noreferrer">
+              <img className='social-btn' src={In} alt='linkedin' />
+            </a>
+            <a className='github' href='https://github.com/jackbdr' target='_blank' rel="noreferrer">
+              <img className='social-btn' src={Github} alt='github' />
+            </a>
+          </div>
         </Container>
       </Navbar>
       {/* <hr /> */}

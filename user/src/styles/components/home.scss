@@ -4,18 +4,44 @@
     }
 }
 
-@keyframes moving {
+@-webkit-keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveup {
     from {top: 25px;}
     to {top: 0px;}
 }
 
-@-webkit-keyframes moving {
+@-webkit-keyframes moveup {
     from {top: 25px;}
     to {top: 0px;}
+}
+
+@keyframes updown {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 15px, 0);
+    }
+}
+
+@-webkit-keyframes updown {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 15px, 0);
+    }
 }
 
 .home {
-    height: 100vh;
+    height: 90vh;
     .greeting {
         flex-direction: column;
         height: 70%;
@@ -24,20 +50,43 @@
             font-size: 400%;
             letter-spacing: 2px;
             color: #800020;
+            margin-left: 2%;
         }
         .se-wrapper {
             opacity: 1;
             // animation: appear 0.1s ease-out 2.35s forwards;
             position: relative;
-            -webkit-animation: moving 0.5s ease-out 3s forwards;
-            animation: moving 0.5s ease-out 3s forwards;
+            -webkit-animation: moveup 0.5s ease-out 2.5s forwards;
+            animation: moveup 0.5s ease-out 2.5s forwards;
             h2 {
                 font-family: 'Bebas Neue', cursive;
-                margin-top: 2px;
+                margin-top: 1px;
                 opacity: 0;
                 letter-spacing: 1.5px;
-                animation: appear 0.1s ease-out 3s forwards;
+                animation: appear 0.1s ease-out 2.5s forwards;
+                -webkit-animation: appear 0.1s ease-out 2.5s forwards;
             }
+        }
+    }
+    .scroll-wrapper {
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        animation: updown 0.5s;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+        animation-iteration-count: infinite;
+        -webkit-animation: updown 0.5s;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: cubic-bezier(
+        .5, 0.05, 1, .5);
+        -webkit-animation-iteration-count: infinite;
+        .scroll-btn {
+            opacity: 0;
+            width: 5%;
+            animation: appear 0.1s ease-out 2.5s forwards;
+            -webkit-animation: appear 0.1s ease-out 2.5s forwards;
         }
     }
 }
