@@ -19,8 +19,8 @@ const NavBar = () => {
             <img src={Logo} className='logo' />
           </Navbar.Brand>
           <div className='bulk-navbar'>
-            <p className='about-btn fadeout'><Link activeClass="active" to='about' spy={true} smooth={true}>about</Link></p>
-            <p className='projects-btn fadeout'>projects</p>
+            <p className='about-btn fadeout'><Link to='about' spy={true} smooth={true} duration={300}>about</Link></p>
+            <p className='projects-btn fadeout'><Link to="projects" spy={true} smooth={true} duration={300}>projects</Link></p>
             <p className='exp-btn fadeout'>experience</p>
             <p className='interests-btn fadeout'>interests</p>
             <p className='contact-btn fadeout'>contact</p>
