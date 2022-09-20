@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 import Typewriter from 'typewriter-effect'
 
@@ -19,8 +20,7 @@ const Home = () => {
         </div>
       </div>
       <div className='scroll-wrapper'>
-        <img className='scroll-btn' src={Scroll} alt='scroll-down-icon' />
-        {/* <p className='scroll-btn' src={Scroll} alt='scroll-down-icon'>Hello</p> */}
+        <Link className='scroll-link' to='about' spy={true} smooth={true} duration={300}><img className='scroll-btn' src={Scroll} alt='scroll-down-icon' /></Link>
       </div>
     </div>
   )

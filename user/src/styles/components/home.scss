@@ -70,8 +70,6 @@
     }
     .scroll-wrapper {
         opacity: 1;
-        display: flex;
-        justify-content: center;
         position: relative;
         animation: updown 0.5s;
         animation-direction: alternate;
@@ -82,11 +80,17 @@
         -webkit-animation-timing-function: cubic-bezier(
         .5, 0.05, 1, .5);
         -webkit-animation-iteration-count: infinite;
+        .scroll-link {
+            display: inline-block;
+        }
         .scroll-btn {
+            display: block;
+            margin: 0 auto;
             opacity: 0;
             width: 5%;
             animation: appear 0.1s ease-out 2.5s forwards;
             -webkit-animation: appear 0.1s ease-out 2.5s forwards;
+            cursor: pointer;
         }
     }
 }
