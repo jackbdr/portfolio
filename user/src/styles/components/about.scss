@@ -1,11 +1,35 @@
 #about {
     height: 100vh;
-    background-color: white;
+    // background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    .about-text {
+    flex-direction: column;
+    .about-head {
+        font-family: 'Lilita One', cursive;
+        margin-bottom: 5%;
+    }
+    .about-bulk {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         width: 50%;
-        background-color: aqua;
+        background-color: white;
+        padding: 1%;
+        border-radius: 8px;
+        border: 3px solid $bergundy;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 15%;
+        .about-sub {
+
+        }
+        .about-main {
+
+        }
+    }
+    .logo {
+        width: 30px;
     }
 }
