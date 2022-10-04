@@ -30,7 +30,7 @@ const About = () => {
         <p className='about-sub'>A Software Engineer with leadership, teamwork and management experience in the charity sector.</p>
         <p className='about-main'>Upon achievement of my degree in Maths and Philosophy from The University of Sheffield, I completed the General Assembly Software Engineering Immersive Programme. During the course I learnt how to develop and deploy full-stack applications with in-demand technologies such as React, Python with Django, and Node.js with Express. I also gained proficiency in creating and consuming APIs, group programming and Github version control. </p>
       </div>
-      <div className='lang-logos'>
+      <div data-aos='fade-up' className='lang-logos'>
         <img className='logo' src={html} />
         <img className='logo' src={js} />
         <img className='logo' src={react} />
