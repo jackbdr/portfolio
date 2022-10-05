@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -23,30 +23,69 @@ const About = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 })
   }, [])
+
+  const [ logoNum, setLogoNum ] = useState(null)
+
+  const handleLogoHover = () => {
+
+  }
+
   return (
     <section id='about'>
-      <h1 className='about-head'>Hi! I&apos;m Jack...</h1>
+      <h1 className='about-head'>Hi!</h1>
       <div data-aos='fade-up' className='about-bulk'>
         <p className='about-sub'>A Software Engineer with leadership, teamwork and management experience in the charity sector.</p>
         <p className='about-main'>Upon achievement of my degree in Maths and Philosophy from The University of Sheffield, I completed the General Assembly Software Engineering Immersive Programme. During the course I learnt how to develop and deploy full-stack applications with in-demand technologies such as React, Python with Django, and Node.js with Express. I also gained proficiency in creating and consuming APIs, group programming and Github version control. </p>
       </div>
       <div data-aos='fade-up' className='lang-logos'>
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={html} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={js} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={react} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={python} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={css} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={sass} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={bootstrap} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={node} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={ex} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={mongo} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={django} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={PostgreSQL} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={tableplus} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={insomnia} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={github} />
+        {/* </div> */}
+        {/* <div className='logo-wrap'> */}
         <img className='logo' src={git} />
+        {/* </div> */}
       </div>
     </section>
   )
