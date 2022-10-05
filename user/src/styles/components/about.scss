@@ -34,14 +34,16 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 65%;
-        // .logo-wrap {
-        //     max-width: 55px;
+        .logo-wrap {
+            width: 55px;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            margin-top: 4%;
             .logo {
-                margin-left: 2.5%;
-                margin-right: 2.5%;
+                
                 max-width: 55px;
-                margin-top: 5%;
+                
             }
-        // } 
+        }
     }
 }
