@@ -39,52 +39,52 @@ const About = () => {
       </div>
       <div data-aos='fade-up' className='lang-logos'>
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={html} />
+        <img className='logo' id='1' src={html} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={js} />
+        <img className='logo' id='2' src={js} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={react} />
+        <img className='logo' id='3' src={react} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={python} />
+        <img className='logo' id='4' src={python} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={css} />
+        <img className='logo' id='5' src={css} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={sass} />
+        <img className='logo' id='6' src={sass} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={bootstrap} />
+        <img className='logo'id='7' src={bootstrap} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={node} />
+        <img className='logo' id='8' src={node} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={ex} />
+        <img className='logo' id='9' src={ex} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={mongo} />
+        <img className='logo' id='10' src={mongo} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={django} />
+        <img className='logo' id='11' src={django} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={PostgreSQL} />
+        <img className='logo' id='12' src={PostgreSQL} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={tableplus} />
+        <img className='logo' id='13' src={tableplus} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={insomnia} />
+        <img className='logo' id='14' src={insomnia} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={github} />
+        <img className='logo' id='15' src={github} />
         {/* </div> */}
         {/* <div className='logo-wrap'> */}
-        <img className='logo' src={git} />
+        <img className='logo' id='16' src={git} />
         {/* </div> */}
       </div>
     </section>
