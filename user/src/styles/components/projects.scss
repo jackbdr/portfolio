@@ -1,9 +1,26 @@
 #projects {
     height: 100vh;
     .projects-content {
+        max-width: 60%;
+        margin: 0 auto;
         .projects-head {
             text-align: center;
             padding-top: 2%;
+        }
+        .project-div {
+            display: flex;
+            justify-content: space-between;
+            .proj-img-link {
+                max-width: 40%;
+                img {
+                    max-width: 100%;
+                    border: 3px solid $bergundy;
+                    border-radius: 8px;
+                }
+            }
+            .project-info {
+
+            }
         }
     }
 }

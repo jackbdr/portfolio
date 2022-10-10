@@ -82,6 +82,8 @@
         -webkit-animation-timing-function: cubic-bezier(
         .5, 0.05, 1, .5);
         -webkit-animation-iteration-count: infinite;
+        width: 5%;
+        margin: 0 auto;
         .scroll-link {
         }
         .scroll-btn {
@@ -90,7 +92,7 @@
             display: flex;
             justify-content: center;
             opacity: 0;
-            width: 5%;
+            width: 100%;
             animation: appear 0.1s ease-out 2.5s forwards;
             -webkit-animation: appear 0.1s ease-out 2.5s forwards;
             cursor: pointer;
