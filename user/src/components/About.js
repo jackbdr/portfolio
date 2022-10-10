@@ -37,7 +37,7 @@ const About = () => {
   return (
     <section id='about' className='flex-center'>
       <div className='about-content flex-center'>
-        <h2 className='about-head section-head'>Hi!</h2>
+        <h2 className='about-head section-head'>Hi! I&apos;m Jack...</h2>
         <div data-aos='fade-up' className='about-bulk'>
           <p className='about-sub'>A Software Engineer with leadership, teamwork and management experience in the charity sector.</p>
           <p className='about-main'>Upon achievement of my degree in Maths and Philosophy from The University of Sheffield, I completed the General Assembly Software Engineering Immersive Programme. During the course I learnt how to develop and deploy full-stack applications with in-demand technologies such as React, Python with Django, and Node.js with Express. I also gained proficiency in creating and consuming APIs, group programming and Github version control. </p>
