@@ -1,49 +1,80 @@
 #about {
     height: 100vh;
     // background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .about-head {
-        font-family: 'Lilita One', cursive;
-        margin-bottom: 5%;
-    }
-    .about-bulk {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        background-color: white;
-        padding: 1%;
-        border-radius: 8px;
-        border: 3px solid $bergundy;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        margin-bottom: 5%;
-        .about-sub {
-
+    font-family: 'Gruppo', cursive;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    .about-content {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-direction: column;
+        .about-head {
+            margin-bottom: 5%;
+            font-weight: 900;
         }
-        .about-main {
-
+        .about-bulk {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            background-color: white;
+            padding: 1%;
+            border-radius: 8px;
+            border: 3px solid $bergundy;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1em;
+            // position: absolute;
+            margin-bottom: 5%;
+            .about-sub {
+    
+            }
+            .about-main {
+    
+            }
         }
-    }
-    .lang-logos {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 65%;
-        .logo-wrap {
-            width: 55px;
-            margin-left: 2.5%;
-            margin-right: 2.5%;
-            margin-top: 4%;
-            .logo {
-                
-                max-width: 55px;
-                
+        .lang-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 750px;
+            margin-bottom: 5%;
+            .logo-wrap {
+                width: 50px;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                margin-top: 4%;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                transition: all 1s ease;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .logo {
+                    max-width: 45px;
+                }
+                .lang-name {
+                    margin: 0;
+                    position: absolute;
+                    margin-top: 50px;
+                    -webkit-transition: all 1s ease;
+                    -moz-transition: all 1s ease;
+                    -o-transition: all 1s ease;
+                    transition: all 1s ease;
+                    text-align: center;
+                    // font-family: 'Bebas Neue', cursive;
+                }
             }
         }
     }
 }
+
+// .logo-wrap:hover .lang-name {
+//     opacity: 1;
+// }
+

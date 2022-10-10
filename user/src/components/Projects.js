@@ -4,7 +4,9 @@ const Projects = () => {
 
   return (
     <section id='projects'>
-      <p>hellohello</p>
+      <div className='projects-content'>
+        <h2 className='projects-head section-head'>Projects</h2>
+      </div>
     </section>
   )
 }
