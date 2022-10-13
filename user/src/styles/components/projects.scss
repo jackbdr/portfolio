@@ -1,8 +1,9 @@
 #projects {
-    height: 100vh;
+    // height: 100vh;
     font-family: 'Bebas Neue', cursive;
     .projects-content {
-        max-width: 70%;
+        width: 70%;
+        max-width: 1157px;
         margin: 0 auto;
         margin-top: 10%;
         .projects-head {
@@ -14,11 +15,12 @@
             .project-div {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 15%;
+                // margin-top: 15%;
                 .proj-img-link {
-                    max-width: 45%;
+                    width: 150%;
                     img {
-                        max-width: 100%;
+                        width: 100%;
+                        // height: 248px;
                         border: 3px solid $bergundy;
                         border-radius: 8px;
                         transition: transform .2s;
@@ -30,40 +32,14 @@
                 .project-info-right {
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-end;
-                    margin-left: 10%;
-                    .proj-info-header {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: flex-start;
-                        .proj-github {
-                            width: 30px;
-                            img {
-                                width: 100%;
-                            }
-                            img:hover {
-                                opacity: 0.7;
-                            }
-                        }
-                        .project-name {
-                            // margin: 0;
-                            margin-left: 7px;
-                        }
-                    }
-                    p {
-                        text-align: end;
-                        font-size: 1.2rem;
-                    }
-                }
-                .project-info-left {
-                    display: flex;
-                    flex-direction: column;
                     align-items: flex-start;
-                    margin-right: 10%;
+                    justify-content: space-between;
+                    // margin-left: 10%;
                     .proj-info-header {
                         display: flex;
                         justify-content: flex-end;
                         align-items: flex-start;
+                        padding-left: 4%;
                         .proj-github {
                             width: 30px;
                             img {
@@ -80,7 +56,62 @@
                     }
                     p {
                         text-align: start;
-                        font-size: 1.2rem;
+                        font-size: 116%;
+                        width: 80%;
+                        padding-left: 10%;
+                    }
+                    .proj-lang-logos {
+                        display: flex;
+                        justify-content: space-between;
+                        align-self: flex-end;
+                        // margin-left: 9%;
+                        .proj-logos {
+                            width: 23px;
+                            margin: 0 5px;
+                        }
+                        #mapbox-logo {
+                            width: 72px;
+                        }
+                    }
+                }
+                .project-info-left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    // margin-right: 10%;
+                    .proj-info-header {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-start;
+                        .proj-github {
+                            width: 30px;
+                            img {
+                                width: 100%;
+                            }
+                            img:hover {
+                                opacity: 0.7;
+                            }
+                        }
+                        .project-name {
+                            margin-right: 7px;
+                        }
+                    }
+                    p {
+                        text-align: start;
+                        font-size: 116%;
+                        width: 80%;
+                        padding-left: 10%;
+                    }
+                    .proj-lang-logos {
+                        display: flex;
+                        justify-content: space-between;
+                        align-self: flex-end;
+                        margin-right: 5%;
+                        .proj-logos {
+                            width: 23px;
+                            margin: 0 5px;
+                        }
                     }
                 }
             }
@@ -89,7 +120,7 @@
 }
 
 .project-div-top {
-    // margin-top: 20%;
+    // margin-top: 5%;
 }
 
 .proj-descrip {
