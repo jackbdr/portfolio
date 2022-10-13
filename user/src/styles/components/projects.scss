@@ -7,7 +7,6 @@
         margin: 0 auto;
         margin-top: 10%;
         .projects-head {
-            text-align: center;
             padding-top: 2%;
         }
         .projects {
@@ -27,6 +26,7 @@
                     }
                     img:hover {
                         transform: scale(1.01);
+                        // box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 8px;
                     }
                 }
                 .project-info-right {

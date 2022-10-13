@@ -1,3 +1,12 @@
 #experience {
     height: 100vh;
+    .experience-content {
+        width: 70%;
+        max-width: 1157px;
+        margin: 0 auto;
+        margin-top: 10%;
+        .experience-head {
+            padding-top: 2%;
+        }
+    }
 }
