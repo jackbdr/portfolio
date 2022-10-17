@@ -8,5 +8,18 @@
         .experience-head {
             padding-top: 2%;
         }
+        .timeline {
+            display: flex;
+            width: 100%;
+
+            p {
+                cursor: pointer;
+                margin-left: 2%;
+                margin-right: 2%;
+                font-size: 130%;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
     }
 }
