@@ -8,14 +8,11 @@
         .experience-head {
             padding-top: 2%;
         }
-        .exp-accordion {
-            .accordion-item {
-                background-color: #f6f3e7;
-            }
-            .accordion-header {
-                .accordion-button {
-                    background-color: #f6f3e7;
-                    color: $bergundy;
+        .accordion {
+            width: 80%;
+            .card {
+                .custom-acc-header {
+                    display: flex;
                 }
             }
         }
