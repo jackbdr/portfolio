@@ -3,6 +3,9 @@ import Accordion from 'react-bootstrap/Accordion'
 import { useAccordionButton } from 'react-bootstrap/AccordionButton'
 import Card from 'react-bootstrap/Card'
 
+import plus from '../images/plus-redo.png'
+import minus from '../images/minus-redo.png'
+
 const Experience = () => {
 
   const CustomToggle = ({ children, eventKey, handleClick }) => {
@@ -48,11 +51,16 @@ const Experience = () => {
                 }}
               >
                 {item.jobTitle}
-                {activeKey === index ? '-' : '+'}
+                {activeKey === index ?
+                  <img className='plusminus' src={minus} />
+                  :
+                  <img className='plusminus' src={plus} />
+                }
               </CustomToggle>
               <Accordion.Collapse eventKey={index}>
                 <Card.Body>{item.descrip}</Card.Body>
               </Accordion.Collapse>
+              {/* <hr className='exp-hr'/> */}
             </Card>
           ))}
         </Accordion>
