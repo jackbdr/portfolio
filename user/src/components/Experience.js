@@ -27,10 +27,13 @@ const Experience = () => {
   const [activeKey, setActiveKey] = useState(0)
 
   const data = [
-    { jobTitle: 'Carpenter\'s Assistant', descrip: 'worked on projects ranging from...' },
-    { jobTitle: 'Team Leader / Warehouse Manager', descrip: 'Originally volunteered during the first lockdown before being employed full-time. Responsible for running foodbank sessions' },
-    { jobTitle: 'Freddie\'s Flowers Rider', descrip: 'Delivering flowers via cargo bike to subscribed customers.' }
+    { jobTitle: 'Carpenter\'s Assistant @ HGF Furniture', descrip: ['Originally volunteered during the first lockdown before being employed full-time.', 'Responsible for running foodbank sessions', 'Managing teams of volunteers to ensure an efficient and caring service for each of the many people in need.', 'Managing the warehouse (sourcing food, keeping stocks high, receiving and sorting large deliveries)'] },
+    { jobTitle: 'Student @ General Assembly', descrip: ['worked on projects ranging from...'] },
+    { jobTitle: 'Rider @ Freddie\'s Flowers', descrip: ['Delivering flowers via cargo bike to subscribed customers.'] },
+    { jobTitle: 'Team Leader / Warehouse Manager @ Spring Community Hub', descrip: ['Originally volunteered during the first lockdown before being employed full-time.', 'Responsible for running foodbank sessions', 'Managing teams of volunteers to ensure an efficient and caring service for each of the many people in need.', 'Managing the warehouse (sourcing food, keeping stocks high, receiving and sorting large deliveries)'] }
   ]
+
+  console.log(data[0].jobTitle.split('@'))
 
   return (
     <section id='experience'>
@@ -50,17 +53,19 @@ const Experience = () => {
                   }
                 }}
               >
-                {item.jobTitle}
-                {activeKey === index ?
-                  <img className='plusminus' src={minus} />
-                  :
-                  <img className='plusminus' src={plus} />
-                }
+                <h3><span className='job-title'>{item.jobTitle.split('@')[0]}</span> @ {item.jobTitle.split('@')[1]}</h3>
+                <div className='plusminus-container'>
+                  {activeKey === index ?
+                    <img className='plusminus' src={minus} />
+                    :
+                    <img className='plusminus' src={plus} />
+                  }
+                </div>
               </CustomToggle>
               <Accordion.Collapse eventKey={index}>
-                <Card.Body>{item.descrip}</Card.Body>
+                <Card.Body>{item.descrip.map((line, index) => <p key={index}>{line}</p>)}</Card.Body>
               </Accordion.Collapse>
-              {/* <hr className='exp-hr'/> */}
+              {activeKey === index && <hr className='exp-hr'/>}
             </Card>
           ))}
         </Accordion>
