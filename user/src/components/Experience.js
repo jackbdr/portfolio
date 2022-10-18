@@ -39,7 +39,7 @@ const Experience = () => {
     <section id='experience'>
       <div className='experience-content flex-center'>
         <h2 className='experience-head section-head'>Experience</h2>
-        <Accordion className='' defaultActiveKey={0} activeKey={activeKey}>
+        <Accordion defaultActiveKey={0} activeKey={activeKey}>
           {data.map((item, index) => (
             <Card className={index === data.length - 1 && 'bottom-job'} key={index}>
               <CustomToggle
