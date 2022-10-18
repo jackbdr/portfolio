@@ -9,14 +9,14 @@
             padding-top: 2%;
         }
         .accordion {
-            width: 80%;
+            width: 70%;
             margin-top: 8%;
-            // background-color: white;
-            // border: 3px solid $bergundy;
-            // border-radius: 8px;
-            // padding: 2%;
+            background-color: white;
+            border: 3px solid $bergundy;
+            border-radius: 8px;
+            padding: 2%;
             .card {
-                background-color: #f6f3e7;
+                // background-color: #f6f3e7;
                 // background-color: white;
                 border: none;
                 margin-bottom: 4%;
@@ -24,11 +24,12 @@
                     display: flex;
                     justify-content: space-between;
                     // font-family: 'Bebas Neue', cursive;
-                    font-family: 'Gruppo', cursive;
-                    font-size: 1.4em;
-                    font-weight: 700;
-                    .job-title {
-                        font-style: italic;
+                    font-family: 'Lato', sans-serif;
+                    .jobtitle-jobcomp {
+                        font-size: 140%;
+                        .job-title {
+                            font-style: italic;
+                        }
                     }
                     .plusminus-container {
                         height: 27px;
@@ -41,12 +42,18 @@
                     }
                 }
                 .accordion-collapse {
-                    font-family: 'Gruppo', cursive;
+                    font-family: 'Lato', sans-serif;
+                    .card-body {
+                        font-size: 105%;
+                    }
                 }
                 .exp-hr {
                     margin: 1% auto !important;
                     width: 60% !important;
                 }
+            }
+            .bottom-job {
+                margin: 0;
             }
         }
     }

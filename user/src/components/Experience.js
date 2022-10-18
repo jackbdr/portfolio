@@ -30,7 +30,7 @@ const Experience = () => {
     { jobTitle: 'Carpenter\'s Assistant @ HGF Furniture', descrip: ['Originally volunteered during the first lockdown before being employed full-time.', 'Responsible for running foodbank sessions', 'Managing teams of volunteers to ensure an efficient and caring service for each of the many people in need.', 'Managing the warehouse (sourcing food, keeping stocks high, receiving and sorting large deliveries)'] },
     { jobTitle: 'Student @ General Assembly', descrip: ['worked on projects ranging from...'] },
     { jobTitle: 'Rider @ Freddie\'s Flowers', descrip: ['Delivering flowers via cargo bike to subscribed customers.'] },
-    { jobTitle: 'Team Leader / Warehouse Manager @ Spring Community Hub', descrip: ['Originally volunteered during the first lockdown before being employed full-time.', 'Responsible for running foodbank sessions', 'Managing teams of volunteers to ensure an efficient and caring service for each of the many people in need.', 'Managing the warehouse (sourcing food, keeping stocks high, receiving and sorting large deliveries)'] }
+    { jobTitle: 'Team Leader / Warehouse Manager @ Spring Community Hub', descrip: ['Originally volunteered during the first lockdown before being employed full-time.', 'Responsible for running foodbank sessions.', 'Managing teams of volunteers to ensure an efficient and caring service for each of the many people in need.', 'Managing the warehouse (sourcing food, keeping stocks high, receiving and sorting large deliveries).'] }
   ]
 
   console.log(data[0].jobTitle.split('@'))
@@ -41,7 +41,7 @@ const Experience = () => {
         <h2 className='experience-head section-head'>Experience</h2>
         <Accordion className='' defaultActiveKey={0} activeKey={activeKey}>
           {data.map((item, index) => (
-            <Card key={index}>
+            <Card className={index === data.length - 1 && 'bottom-job'} key={index}>
               <CustomToggle
                 as={Card.Header}
                 eventKey={index}
@@ -53,7 +53,7 @@ const Experience = () => {
                   }
                 }}
               >
-                <h3><span className='job-title'>{item.jobTitle.split('@')[0]}</span> @ {item.jobTitle.split('@')[1]}</h3>
+                <h3 className='jobtitle-jobcomp'><span className='job-title'>{item.jobTitle.split('@')[0]}</span> @ {item.jobTitle.split('@')[1]}</h3>
                 <div className='plusminus-container'>
                   {activeKey === index ?
                     <img className='plusminus' src={minus} />
