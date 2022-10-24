@@ -1,0 +1,15 @@
+{
+    "name": "portfolio",
+    "type": "module",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "nodemailer": "^6.8.0"
+    },
+    "scripts": {
+        "serve": "node EmailServer.js"
+    },
+    "license": "ISC",
+    "proxy": "http://localhost:4000"
+}
