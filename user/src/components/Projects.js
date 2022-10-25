@@ -32,6 +32,10 @@ const Projects = () => {
     Aos.init({ duration: 2000 })
   }, [])
 
+  const handleGitHover = () => {
+    
+  }
+
   return (
     <section id='projects'>
       <div className='projects-content flex-center'>
@@ -43,18 +47,21 @@ const Projects = () => {
             </a>
             <div className='project-info-right'>
               <div className='proj-info-header'>
-                <h3 className='project-name'>What On Earth</h3>
-                <a className='proj-github' href='https://github.com/jackbdr/Project-4-what_on_earth' target='_blank' rel='noreferrer'>
-                  <img src={github} />
-                </a>
+                <div className='proj-name-github'>
+                  <h3 className='project-name'>What On Earth</h3>
+                  <a className='proj-github' href='https://github.com/jackbdr/Project-4-what_on_earth' target='_blank' rel='noreferrer'>
+                    <img src={github} />
+                  </a>
+                  <p>ReadMe</p>
+                </div>
+                <h6>1 Week</h6>
               </div>
-              <p className='proj-descrip'>A full-stack application based around an interactive map, designed to be educational and fun to use (primarily for kids... or animal lovers!). The user is able to view, comment on and share all different kinds of animals!</p>
+              <p className='proj-descrip'>A full-stack application based around an interactive map, designed to be educational and fun to use (primarily for kids... or animal lovers!).</p>
               <div className='proj-lang-logos'>
                 <img className='proj-logos' src={react} alt='react-logo' />
                 <img className='proj-logos' src={python} alt='python-logo' />
                 <img className='proj-logos' src={django} alt='django-logo' />
                 <img className='proj-logos' src={js} alt='javascript-logo' />
-                <img className='proj-logos' src={html} alt='html5-logo' />
                 <img className='proj-logos' src={css} alt='css3-logo' />
                 <img className='proj-logos' src={sass} alt='sass-logo' />
                 <img id='mapbox-logo' className='proj-logos' src={mapbox} alt='mapbox-logo' />
@@ -65,19 +72,21 @@ const Projects = () => {
           <div data-aos='fade-right' className='project-div'>
             <div className='project-info-left'>
               <div className='proj-info-header'>
-                <h3 className='project-name'>Seeded</h3>
-                <a className='proj-github' href='https://github.com/jackbdr/Project-3' target='_blank' rel='noreferrer'>
-                  <img src={github} />
-                </a>
+                <div className='proj-name-github'>
+                  <h3 className='project-name'>Seeded</h3>
+                  <a className='proj-github' href='https://github.com/jackbdr/Project-3' target='_blank' rel='noreferrer'>
+                    <img src={github} />
+                  </a>
+                </div>
+                <h6>1 Week</h6>
               </div>
-              <p className='proj-descrip'>A full-stack application based around an interactive map, designed to be educational and fun to use (primarily for kids... or animal lovers!). The user is able to view, comment on and share all different kinds of animals!</p>
+              <p className='proj-descrip'>As a group of three, we created a MERN app which allows the user to view, share and review information about all different kinds of plants! </p>
               <div className='proj-lang-logos seeded-lang-logos'>
                 <img className='proj-logos' src={react} alt='react-logo' />
                 <img className='proj-logos' src={node} alt='node-logo' />
-                <img className='proj-logos' src={mongo} alt='mongoDB-logo' />
                 <img className='proj-logos' src={ex} alt='express-logo' />
+                <img className='proj-logos' src={mongo} alt='mongoDB-logo' />
                 <img className='proj-logos' src={js} alt='javascript-logo' />
-                <img className='proj-logos' src={html} alt='html5-logo' />
                 <img className='proj-logos' src={css} alt='css3-logo' />
                 <img className='proj-logos' src={sass} alt='sass-logo' />
                 <img className='proj-logos' src={bootstrap} alt='bootstrap-logo' />
@@ -94,16 +103,19 @@ const Projects = () => {
             </a>
             <div className='project-info-right'>
               <div className='proj-info-header'>
-                <h3 className='project-name'>Fruity 4 You</h3>
-                <a className='proj-github' href='https://github.com/jackbdr/Project-2-FruitsHackathon' target='_blank' rel='noreferrer'>
-                  <img src={github} />
-                </a>
+                <div className='proj-name-github'>
+                  <h3 className='project-name'>Fruity 4 You</h3>
+                  <a className='proj-github' href='https://github.com/jackbdr/Project-2-FruitsHackathon' target='_blank' rel='noreferrer'>
+                    <img src={github} />
+                  </a>
+                  <p>ReadMe</p>
+                </div>
+                <h6>2 Day Hackathon</h6>
               </div>
-              <p className='proj-descrip'>A full-stack application based around an interactive map, designed to be educational and fun to use (primarily for kids... or animal lovers!). The user is able to view, comment on and share all different kinds of animals!</p>
+              <p className='proj-descrip'>Working in a group of three, this was a 2 day hackathon  I mainly worked on the functionality of the “salad maker” page. </p>
               <div className='proj-lang-logos'>
                 <img className='proj-logos' src={react} alt='react-logo' />
                 <img className='proj-logos' src={js} alt='javascript-logo' />
-                <img className='proj-logos' src={html} alt='html5-logo' />
                 <img className='proj-logos' src={css} alt='css3-logo' />
                 <img className='proj-logos' src={sass} alt='sass-logo' />
               </div>
@@ -113,12 +125,15 @@ const Projects = () => {
           <div data-aos='fade-right' className='project-div project-div-bottom'>
             <div className='project-info-left'>
               <div className='proj-info-header'>
-                <h3 className='project-name'>Pac Man</h3>
-                <a className='proj-github' href='https://github.com/jackbdr/Project-1' target='_blank' rel='noreferrer'>
-                  <img src={github} />
-                </a>
+                <div className='proj-name-github'>
+                  <h3 className='project-name'>Pac Man</h3>
+                  <a className='proj-github' href='https://github.com/jackbdr/Project-1' target='_blank' rel='noreferrer'>
+                    <img src={github} />
+                  </a>
+                </div>
+                <h6>1 Week</h6>
               </div>
-              <p className='proj-descrip'>A full-stack application based around an interactive map, designed to be educational and fun to use (primarily for kids... or animal lovers!). The user is able to view, comment on and share all different kinds of animals!</p>
+              <p className='proj-descrip'>A solo project and the first opportunity to get creative with what I had learnt in week 1 of General Assembly&apos;s Software Engineering Immersive.</p>
               <div className='proj-lang-logos'>
                 <img className='proj-logos' src={js} alt='javascript-logo' />
                 <img className='proj-logos' src={html} alt='html5-logo' />
