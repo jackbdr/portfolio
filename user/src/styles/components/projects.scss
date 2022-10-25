@@ -50,8 +50,9 @@
                                 margin-bottom: 0;
                             }
                             .proj-github {
-                                width: 72px;
+                                width: 28px;
                                 margin-bottom: 3px;
+                                flex-shrink: 0;
                                 img {
                                     width: 100%;
                                 }
@@ -61,7 +62,7 @@
                             }
                             p {
                                 padding: 0;
-                                margin-left: 15px;
+                                margin-left: 10px;
                                 margin-bottom: 0;
                             }
                         }
@@ -96,19 +97,28 @@
                     .proj-info-header {
                         .proj-name-github {
                             display: flex;
-                            justify-content: flex-end;
-                            align-items: flex-start;
+                            align-items: center;
+                            margin-bottom: 6px;
                             .project-name {
                                 margin-right: 7px;
+                                white-space: nowrap;
+                                margin-bottom: 0;
                             }
                             .proj-github {
-                                width: 30px;
+                                width: 28px;
+                                margin-bottom: 3px;
+                                flex-shrink: 0;
                                 img {
                                     width: 100%;
                                 }
                                 img:hover {
                                     opacity: 0.7;
                                 }
+                            }
+                            p {
+                                padding: 0;
+                                margin-left: 10px;
+                                margin-bottom: 0;
                             }
                         }
                     }

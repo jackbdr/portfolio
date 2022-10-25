@@ -32,8 +32,14 @@ const Projects = () => {
     Aos.init({ duration: 2000 })
   }, [])
 
-  const handleGitHover = () => {
-    
+  const [gitHoverNum, setGitHoverNum] = useState(null)
+
+  const handleGitHover = (e) => {
+    setGitHoverNum(parseFloat(e.target.id))
+  }  
+
+  const handleGitLeave = () => {
+    setGitHoverNum(null)
   }
 
   return (
@@ -50,9 +56,9 @@ const Projects = () => {
                 <div className='proj-name-github'>
                   <h3 className='project-name'>What On Earth</h3>
                   <a className='proj-github' href='https://github.com/jackbdr/Project-4-what_on_earth' target='_blank' rel='noreferrer'>
-                    <img src={github} />
+                    <img id={4} src={github} onMouseOver={handleGitHover} onMouseOut={handleGitLeave}/>
                   </a>
-                  <p>ReadMe</p>
+                  {gitHoverNum === 4 && <p>ReadMe</p>}
                 </div>
                 <h6>1 Week</h6>
               </div>
@@ -75,8 +81,9 @@ const Projects = () => {
                 <div className='proj-name-github'>
                   <h3 className='project-name'>Seeded</h3>
                   <a className='proj-github' href='https://github.com/jackbdr/Project-3' target='_blank' rel='noreferrer'>
-                    <img src={github} />
+                    <img id={3} onMouseOver={handleGitHover} onMouseOut={handleGitLeave} src={github} />
                   </a>
+                  {gitHoverNum === 3 && <p>ReadMe</p>}
                 </div>
                 <h6>1 Week</h6>
               </div>
@@ -106,9 +113,9 @@ const Projects = () => {
                 <div className='proj-name-github'>
                   <h3 className='project-name'>Fruity 4 You</h3>
                   <a className='proj-github' href='https://github.com/jackbdr/Project-2-FruitsHackathon' target='_blank' rel='noreferrer'>
-                    <img src={github} />
+                    <img id={2} onMouseOver={handleGitHover} onMouseOut={handleGitLeave} src={github} />
                   </a>
-                  <p>ReadMe</p>
+                  {gitHoverNum === 2 && <p>ReadMe</p>}
                 </div>
                 <h6>2 Day Hackathon</h6>
               </div>
@@ -128,8 +135,9 @@ const Projects = () => {
                 <div className='proj-name-github'>
                   <h3 className='project-name'>Pac Man</h3>
                   <a className='proj-github' href='https://github.com/jackbdr/Project-1' target='_blank' rel='noreferrer'>
-                    <img src={github} />
+                    <img id={1} onMouseOver={handleGitHover} onMouseOut={handleGitLeave} src={github} />
                   </a>
+                  {gitHoverNum === 1 && <p>ReadMe</p>}
                 </div>
                 <h6>1 Week</h6>
               </div>
